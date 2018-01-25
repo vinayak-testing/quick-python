@@ -9,7 +9,6 @@ def decorate(func):
     def wrapper_func(*args):
         print("Executing", func.__name__)
         return func(*args)
-
     return wrapper_func
 
 
@@ -31,6 +30,8 @@ def myfunction2(parameters):
     print(parameters)
 
 
-# myFunction = decorate(myFunction)
 myfunction('Hello')
+# myFunction = decorate(myFunction)
+
+
 myfunction2('Hello')
